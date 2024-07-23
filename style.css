@@ -4,17 +4,49 @@
     padding: 0;
     line-height: 1.4;
     font-family: "Poppins",'Times New Roman', serif;
-    
+}
+::selection {
+    background-color: rgb(0, 61, 51);
+    color: rgb(255, 187, 0);
 }
 .nav-bar {
     background-color: black;
-    color: rgb(154, 210, 224);
+    color: #f7d09c;
     font-family: "Poppins",'Times New Roman', serif;
 }
-ul{
+ul {
     display: flex;
 }
-ul li{
+ul li {
     list-style: none;
     margin: 8px 12px;
+}
+table {
+    border: 2px solid rgb(0, 0, 0);
+}
+.container {
+    max-width: 80vw;
+    margin: 30px auto;
+}
+h1, h2, h3 {
+    margin: 19px;
+}
+.btn{
+    padding: 5px 10px;
+    margin: 16px;
+    background-color: #372815;
+    font-weight: 900;
+    color: white;
+    border: 2px solid rgb(79, 75, 75);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 900;
+}
+
+#web,#user,#pass {
+    margin: 7px;
 }
