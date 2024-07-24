@@ -74,3 +74,8 @@ h1, h2, h3 {
 #web,#user,#pass {
     margin: 7px;
 }
+ table, td, tr {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 6px 23px;
+ }
