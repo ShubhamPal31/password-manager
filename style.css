@@ -39,11 +39,19 @@ ul li {
     margin: 8px 12px;
     cursor: pointer;
 }
+
 ul li:hover{
     color: lightgreen;
 }
+p:hover {
+    font-weight: 700;
+}
+h2{
+    cursor: pointer;
+}
 h2:hover {
     text-decoration: underline;
+    color: #ff3b00fc;
 }
 table {
     border: 2px solid rgb(0, 0, 0);
