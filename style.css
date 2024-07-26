@@ -45,13 +45,13 @@ ul li:hover{
 }
 p:hover {
     font-weight: 700;
+    color: #8a33b5;
 }
 h2{
     cursor: pointer;
 }
 h2:hover {
-    text-decoration: underline;
-    color: #ff3b00fc;
+    color: #03004cfc;
 }
 table {
     border: 2px solid rgb(0, 0, 0);
