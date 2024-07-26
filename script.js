@@ -28,12 +28,12 @@ const showPasswords = () => {
 console.log("Working");
 showPasswords()
 document.querySelector(".btn").addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault()                      
     console.log("Clicked...")
     console.log(web.value, user.value, pass.value)
     let passwords = localStorage.getItem("passwords")
     console.log(passwords)
-    if (passwords == null) {
+    if (passwords == null) {                // If there is no value in the table
         let json = []
         json.push({ web: web.value, user: user.value, pass: pass.value })
         alert("password saved");
