@@ -1,4 +1,15 @@
 // Logic to add details to the table
+
+const deletePassword=(website)=>{
+    let data=localStorage.getItem("passwords")
+    let arr = JSON.parse(data);
+    arr=arr.filter((e)=>{
+        return
+    }
+}
+
+
+
 const showPasswords = () => {
     let tb = document.querySelector("table")
     let data = localStorage.getItem("passwords")
