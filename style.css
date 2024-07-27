@@ -87,3 +87,12 @@ h1, h2, h3 {
     border-collapse: collapse;
     padding: 6px 23px;
  }
+ .btnsm{
+    padding: 5px 10px;
+    background-color: #a59888;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(79, 75, 75);
+    border-radius: 8px;
+    cursor: pointer;
+ }
