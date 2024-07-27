@@ -22,13 +22,13 @@ body {
 .webname {
     margin: 8px 12px;
     font-weight: 700;
-    color: rgb(187, 136, 242);
+    color: rgb(117 255 199);
     font-size: 23px;
     margin: 9px 30px;
     cursor: pointer;
 }
 .webname:hover {
-    color: lightgreen;
+    color: lime;
 }
 ul {
     display: flex;
