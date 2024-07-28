@@ -73,12 +73,14 @@ h1, h2, h3 {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 2px 8px black;
+    transition-duration:0.5s;
+    transition-delay: 0.1s;
 }
 .btn:hover {
-    background-color: #D3EE88;
+    background-color: #d0d8b8;
     color: black;
     font-weight: 900;
-    box-shadow: 0 4px 16px black;
+    box-shadow: 0 4px 10px black;
 }
 
 #web,#user,#pass {
