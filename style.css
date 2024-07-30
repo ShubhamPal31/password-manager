@@ -2,6 +2,11 @@
 body {
     background-color: #f7debe;
 }
+
+ .container {
+    margin-left: 10%;
+    justify-content: center;
+ }
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +27,7 @@ body {
 .webname {
     margin: 8px 12px;
     font-weight: 700;
-    color: rgb(117 255 199);
+    color: rgb(255, 255, 255);
     font-size: 23px;
     margin: 9px 30px;
     cursor: pointer;
@@ -100,3 +105,30 @@ h1, h2, h3 {
     border-radius: 8px;
     cursor: pointer;
  }
+ .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  label {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  input {
+    max-width: 200px;
+    padding: 5px;
+  }
+  
+  .btn {
+    align-self: flex-start; 
+    margin-top: 10px; 
+  }
+  
+  
