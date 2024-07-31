@@ -1,74 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
-    background-color: #f7debe;
+    background-color: #ffffff;
 }
 
- .container {
+.container {
     margin-left: 10%;
     justify-content: center;
- }
+}
+
 * {
     margin: 0;
     padding: 0;
     line-height: 1.4;
-    font-family: "Poppins",'Times New Roman', serif;
+    font-family: "Poppins", 'Times New Roman', serif;
 }
+
 ::selection {
     background-color: #D3EE88;
     color: #8a33b5;
 }
+
 .nav-bar {
     background-color: black;
     color: #f7d09c;
-    font-family: "Poppins",'Times New Roman', serif;
+    font-family: "Poppins", 'Times New Roman', serif;
     display: flex;
     justify-content: space-between;
 }
+
 .webname {
     margin: 8px 12px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: lime;
     font-size: 23px;
     margin: 9px 30px;
     cursor: pointer;
 }
+
 .webname:hover {
+    color: white;
+}
+.typewriter {
+    line-height: 1.8;
+}
+#name {
+    color: #05c505;
+    font-weight: 900;
+    box-shadow: 2px 2px 8px darkgreen;
+    background-color: black;
+    border-radius: 8px;
+    padding:3px 8px;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+#name:hover {
     color: lime;
+    font-weight: 900;
+    box-shadow: 0 4px 10px darkgreen;
+    /* padding: 2px 12px; */
 }
 ul {
     display: flex;
-    margin:8px 20px;
+    margin: 8px 20px;
 }
+
 ul li {
     list-style: none;
     margin: 8px 12px;
     cursor: pointer;
 }
 
-ul li:hover{
+ul li:hover {
     color: lightgreen;
 }
-p:hover {
-    font-weight: 700;
-    color: #8a33b5;
-}
-h2{
+
+h2 {
     cursor: pointer;
 }
+
 h2:hover {
     color: #03004cfc;
 }
+
 table {
     border: 2px solid rgb(0, 0, 0);
 }
+
 .container {
     max-width: 80vw;
     margin: 30px auto;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin: 19px;
 }
-.btn{
+
+h1 {
+    margin-left: 0;
+}
+
+.btn {
     padding: 5px 10px;
     margin: 16px;
     background-color: #372815;
@@ -78,9 +112,10 @@ h1, h2, h3 {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 2px 8px black;
-    transition-duration:0.5s;
+    transition-duration: 0.5s;
     transition-delay: 0.1s;
 }
+
 .btn:hover {
     background-color: #d0d8b8;
     color: black;
@@ -88,58 +123,92 @@ h1, h2, h3 {
     box-shadow: 0 4px 10px black;
 }
 
-#web,#user,#pass {
+#web,
+#user,
+#pass {
     margin: 7px;
 }
- table, td, tr {
+#image {
+    height: 300px;
+    width: 350px;
+    margin: 25px 470px;
+}
+table,
+td,
+tr {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 6px 23px;
- }
- .btnsm{
+}
+
+.btnsm {
     padding: 5px 10px;
-    background-color: #a59888;
+    background-color: grey;
     font-weight: 900;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(79, 75, 75);
+    color: rgb(250 255 208);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     cursor: pointer;
- }
- .btnsm:hover{
+}
+
+.btnsm:hover {
     box-shadow: 2px 2px 8px black;
- }
- .form-container {
+}
+
+.form-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  .form-group {
+    margin: 15px 300px;
+}
+.add {
+    margin: 25px 300px;
+}
+
+.form-group {
     display: flex;
-    gap: 10px; 
-  }
-  
-  label {
+    gap: 10px;
+}
+
+label {
     width: 150px;
     margin-top: 10px;
-  }
-  
-  input {
+    color: #c25959;
+    font-weight: 700;
+    margin-left: 19px;
+}
+input {
     max-width: 200px;
     padding: 5px;
-  }
-  
-  .btn {
-    align-self: flex-start; 
-    margin-top: 10px; 
-  }
+}
 
-  img {
+.btn {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+icon {
     cursor: pointer;
     opacity: 0.5;
-  }
- img:hover {
-    opacity: 2;
- } 
+}
 
-  
+icon:hover {
+    opacity: 2;
+}
+
+#span {
+    display: none;
+    font-size: 50%;
+}
+
+p {
+    margin-left: 19px;
+}
+
+table {
+    margin: 10px auto;
+}
+
+.about {
+    margin: 19px 400px;
+}
