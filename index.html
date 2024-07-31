@@ -23,10 +23,13 @@
     <!--Main Content-->
     <div class="container">
         <h1>Password Manager</h1>
-        <h2>Never Forget a Password Again using SafePass</h2>
-        <p> Welcome to SafePass!!<br>Securely store and manage all your passwords in one place.Your security is our
-            priority.</p>
-        <h2>Your Passwords</h2>
+        <div class="about">
+            <h2 class="typewriter">Never Forget a Password Again using <span id="name">SafePass</span></h2>
+            <p> Welcome to SafePass!!<br>Securely store and manage all your passwords in one place.Your security is our
+                priority.</p>
+        </div>
+        <img id="image" src="image.jpg" alt="image">
+        <h2 class="add">Your Passwords <span id="span">Copied!</span></h2>
         <table>
             <tr>
                 <th>Website</th>
@@ -35,7 +38,7 @@
                 <th>Delete</th>
             </tr>
         </table>
-        <h2>Add Password</h2>
+        <h2 class="add">Add Password</h2>
         <form class="form-container" action="#">
             <div class="form-group">
                 <label for="web">Website Name:</label>
@@ -50,8 +53,8 @@
                 <input type="password" name="pass" id="pass">
             </div>
             <button class="btn">add password</button>
+        </div>
         </form>
-    </div>
 
     <!--Linking JavaScript File-->
     <script src="script.js"></script>
