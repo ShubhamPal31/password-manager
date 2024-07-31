@@ -1,12 +1,14 @@
 // Logic to add details to the table
 
-const deletePassword=(website)=>{
+const deletePassword=(web)=>{
     let data=localStorage.getItem("passwords")
     let arr = JSON.parse(data);
     arrUpdated=arr.filter((e)=>{
-        return e.website!=website
+        return e.web!=web
     })
     localStorage.setItem("passwords",JSON.stringify(arrUpdated))
+    alert(`Successfully deleted ${web}'s password`)
+    showPasswords()
 }
 
 
@@ -28,14 +30,20 @@ const showPasswords = () => {
         for (let i = 0; i < arr.length; i++) {
             const element = arr[i];
             str += ` <tr>
-            <td>${element.web}</td>
-            <td>${element.user}</td>
-            <td>${element.pass}</td>
-            <td><button class="btnsm" id="${element.website}">Delete</button></td>
+            <td>${element.web} <img src="copy.svg" alt="Copy" width="12" height="12" onclick="copy(${element.web})">
+            </td>
+            <td>${element.user} <img src="copy.svg" alt="Copy" width="12" height="12" onclick="copy(${element.user})">
+            </td>
+            <td>${element.pass} <img src="copy.svg" alt="Copy" width="12" height="12" onclick="copy(${element.pass})">
+            </td>
+            <td><button class="btnsm" onclick="deletePassword('${element.web}')">Delete</button></td>
             </tr > `
         }
         tb.innerHTML = tb.innerHTML + str
     }
+    web.value=""
+    user.value=""
+    pass.value=""
 }
 console.log("Working");
 showPasswords()
