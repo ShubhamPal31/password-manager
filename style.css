@@ -187,12 +187,12 @@ input {
     margin-top: 10px;
 }
 
-icon {
+.icon {
     cursor: pointer;
     opacity: 0.5;
 }
 
-icon:hover {
+.icon:hover {
     opacity: 2;
 }
 
