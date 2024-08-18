@@ -4,10 +4,6 @@ body {
     background-color: #ffffff;
 }
 
-.container {
-    margin-left: 10%;
-    justify-content: center;
-}
 
 * {
     margin: 0;
@@ -23,10 +19,11 @@ body {
 
 .nav-bar {
     background-color: black;
-    color: #f7d09c;
+    color: #ffffff;
     font-family: "Poppins", 'Times New Roman', serif;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .webname {
@@ -36,30 +33,45 @@ body {
     font-size: 23px;
     margin: 9px 30px;
     cursor: pointer;
+    transition: color 0.5s ease-in-out 0s;
 }
 
 .webname:hover {
     color: white;
+    font-weight: 900;
 }
+
+.container {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80vw;
+    margin: 30px auto;
+}
+
 .typewriter {
     line-height: 1.8;
 }
+
 #name {
     color: #05c505;
     font-weight: 900;
     box-shadow: 2px 2px 8px darkgreen;
     background-color: black;
     border-radius: 8px;
-    padding:3px 8px;
+    padding: 3px 8px;
     transition-duration: 0.5s;
     transition-delay: 0.1s;
 }
+
 #name:hover {
     color: lime;
     font-weight: 900;
     box-shadow: 0 4px 10px darkgreen;
-    /* padding: 2px 12px; */
 }
+
 ul {
     display: flex;
     margin: 8px 20px;
@@ -69,10 +81,12 @@ ul li {
     list-style: none;
     margin: 8px 12px;
     cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 ul li:hover {
-    color: lightgreen;
+    color: blue;
 }
 
 h2 {
@@ -87,10 +101,6 @@ table {
     border: 2px solid rgb(0, 0, 0);
 }
 
-.container {
-    max-width: 80vw;
-    margin: 30px auto;
-}
 
 h1,
 h2,
@@ -128,11 +138,13 @@ h1 {
 #pass {
     margin: 7px;
 }
+
 #image {
     height: 300px;
     width: 350px;
     margin: 25px 470px;
 }
+
 table,
 td,
 tr {
@@ -161,6 +173,7 @@ tr {
     gap: 10px;
     margin: 15px 300px;
 }
+
 .add {
     margin: 25px 300px;
 }
@@ -177,6 +190,7 @@ label {
     font-weight: 700;
     margin-left: 19px;
 }
+
 input {
     max-width: 200px;
     padding: 5px;
@@ -209,6 +223,74 @@ table {
     margin: 10px auto;
 }
 
-.about {
-    margin: 19px 400px;
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 8px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .about {
+        margin: 20px 10px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 0.9em;
+        padding: 6px 8px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: auto;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .webname {
+        font-size: 20px;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    .btn,
+    .btnsm {
+        padding: 5px 8px;
+        font-size: 0.9em;
+    }
 }
